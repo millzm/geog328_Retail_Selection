@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>References</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        #myTopnav {
+          background-color: pink;
+          overflow: hidden;
+        }
+
+        #myTopnav a {
+          color: teal;
+          padding: 2%;
+          display: inline-block;
+        }
+
+        #myTopnav a:hover {
+          background-color: lightcoral;
+          color: black
+        }
+
+        #myTopnav a.active {
+          background-color: rgb(232, 136, 222);
+          color: rgb(0, 75, 75)
+        }
+    </style>
+
+
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Including the Font Awesome CSS library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Links to different sections -->
+        <a href="index.html">Home</a>
+        <a href="section1.html">Deciding Location</a>
+        <a href="section2.html">Traits</a>
+        <a href="section3.html">Examples</a>
+        <a href="see_also.html">See Also</a>
+
+        <!-- Active link pointing to the references.html page -->
+        <a class="active" href="references.html">References</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Reference section -->
+        These are some I used to gather information on the topic.
+        <br> I would recommend checking them out as well.
+        <br>
+        <br> <a href="https://www.accruent.com/resources/knowledge-hub/retail-site-selection">Article by Accruent</a>
+        <br> 
+        <br> <a href="https://shreebalajiconstruction.com/importance-of-retail-location/#:~:text=Location%20affects%20retail%20success%20by,customers%20and%20drive%20higher%20sales.">The importance of doing this properly</a>
+        <br>
+        <br> <a href="https://www.safegraph.com/blog/retail-site-selection-checklist">A more simple break down of the topic</a>
+    </div>
+
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
