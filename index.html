@@ -1,1 +1,147 @@
-"<h1>Welcome to Retail Selection!</h1>" 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retail Store Selection</title>
+    <style>
+        body {
+          background-color: aquamarine;
+        }
+
+        #myTopnav {
+          background-color: pink;
+          overflow: hidden;
+        }
+
+        #myTopnav a {
+          color: teal;
+          padding: 2%;
+          display: inline-block;
+        }
+
+        #myTopnav a:hover {
+          background-color: lightcoral;
+          color: black
+        }
+
+        #myTopnav a.active {
+          background-color: rgb(232, 136, 222);
+          color: rgb(0, 75, 75)
+        }
+
+        .icon {
+          display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+          .icon {
+            display: block;
+            font-size: 30px;
+            position: absolute;
+          }
+
+          .topnav.responsive a {
+            display: block;
+            text-align: left;
+          }
+          
+        }
+    
+        .image-front-page {
+          text-align: center;
+        }
+    
+        .container {
+          position: relative;
+          display: inline-block;
+          max-width: 100%;
+        }
+    
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+    
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #9caeb4;
+        }
+    
+        .container:hover .overlay {
+          opacity: 1;
+        }
+    
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+    </style>
+
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Including the Font Awesome CSS library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Active link pointing to the index.html page -->
+        <a class="active" href="index.html">Home</a>
+
+        <!-- Links to other sections -->
+        <a href="section1.html">Deciding Location</a>
+        <a href="section2.html">Traits</a>
+        <a href="section3.html">Examples</a>
+
+        <!-- Additional links -->
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Abstract section -->
+        This website is designed to teach about retail store selection.
+        <br>There are many ways a retail store can decide on where to put a new loctaion.
+        <br>Location, intended audience, and cost of area can all be factors
+        <br>
+        <br>
+        <!-- Displaying the course cover image in a scaled size -->
+        <div class="container">
+            <img src="img/retail_clip_art.png" style="width: 100%; height: auto;" class="image">
+            <div class="overlay">
+                <p>Don't worry it's not as complex as it seems.
+                  <br> We'll show you the ropes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
